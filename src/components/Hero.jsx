@@ -23,41 +23,41 @@ function Github({ size = 24, ...props }) {
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative py-20 overflow-hidden">
-      <div className="absolute -top-20 -right-20 w-72 h-72 rounded-full
+    <section id="hero" className="relative pt-8 pb-24 sm:pt-12 sm:pb-32 overflow-hidden">
+      <div className="absolute -top-20 -right-20 w-110 h-96 rounded-full
                       bg-[#64dcb4]/5 blur-3xl pointer-events-none" />
       <div className="relative">
-        <span className="inline-block text-[10px] tracking-[0.18em] uppercase
-                         text-[#64dcb4] border border-[#64dcb4]/30 px-3 py-1
-                         rounded mb-5">
-          Undergraduate Informatics Engineering
+        <span className="inline-block text-[9px] sm:text-[11px] tracking-[0.2em] uppercase
+                         text-[#64dcb4] border border-[#64dcb4]/30 px-3.5 py-1.5
+                         rounded mb-6">
+          Informatics Engineering Student
         </span>
-        <h1 className="text-6xl md:text-7xl font-extrabold leading-none
-                       tracking-tight mb-3 bg-gradient-to-br from-[#e8eaf2]
+        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[5.5rem] xl:text-[6.5rem] font-extrabold leading-[0.95]
+                       tracking-tight mb-5 bg-gradient-to-br from-[#e8eaf2]
                        via-[#e8eaf2] to-[#64dcb4]/60 bg-clip-text text-transparent">
-          Abdan<br />Nawwaf.
+          Abdan Nawwaf<br className="hidden sm:inline" /> El Hibban.
         </h1>
-        <p className="text-sm text-white/40 tracking-wide font-light mb-8">
+        <p className="text-sm sm:text-base md:text-lg max-w-2xl text-white/40 tracking-wide font-light mb-10 leading-relaxed">
           {personalInfo.subtitle}
         </p>
-        <div className="flex gap-3 flex-wrap">
+        <div className="flex gap-4 flex-wrap">
           <a
             href={personalInfo.github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 text-xs tracking-widest
+            className="flex items-center gap-2.5 px-6 py-3.5 text-[11px] sm:text-xs tracking-widest
                        uppercase text-[#64dcb4] border border-[#64dcb4]/40
                        rounded-md bg-[#64dcb4]/10 hover:bg-[#64dcb4]/20 transition"
           >
-            <Github size={14} /> GitHub
+            <Github size={15} /> GitHub
           </a>
           <a
             href={`mailto:${personalInfo.email}`}
-            className="flex items-center gap-2 px-5 py-2.5 text-xs tracking-widest
+            className="flex items-center gap-2.5 px-6 py-3.5 text-[11px] sm:text-xs tracking-widest
                        uppercase text-white/50 border border-white/15 rounded-md
                        hover:border-white/40 hover:text-white transition"
           >
-            <Mail size={14} /> Contact
+            <Mail size={15} /> Contact
           </a>
         </div>
       </div>

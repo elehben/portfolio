@@ -7,9 +7,9 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="bg-[#080c14] min-h-screen text-[#e8eaf2] font-sans">
+    <div className="bg-[#080c14] min-h-screen text-[#e8eaf2] font-sans selection:bg-[#64dcb4]/20 selection:text-[#64dcb4]">
       <Navbar />
-      <main className="max-w-4xl mx-auto px-6">
+      <main className="max-w-7xl mx-auto px-6 md:px-12 py-6">
         <Hero />
         <Skills />
         <Projects />
